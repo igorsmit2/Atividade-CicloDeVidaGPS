@@ -11,6 +11,7 @@ public class LocationDAO {
         this.context = context;
     }
 
+    // INSERT
     public String insertLocation(List<Localizacao> loc){
         String template = "INSERT INTO %s (%s, %s) VALUES (%d, %d);";
         StringBuilder sb = new StringBuilder ("");
